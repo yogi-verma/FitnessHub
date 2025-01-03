@@ -1,0 +1,142 @@
+/* Main Container */
+.calorie-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Image and Form Container */
+.image-form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Image Section */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Form Container */
+.form-container {
+  flex: 1;
+  padding: 2rem;
+}
+
+.form-container h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Form Styling */
+.calorie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Calculate Button */
+button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+/* Results Section */
+.calorie-result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calorie-result h3 {
+  color: #333;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.weight-loss {
+  color: #e74c3c !important;
+}
+
+.weight-gain {
+  color: #27ae60 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .image-form-container {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .form-container {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calorie-container {
+    padding: 1rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .calorie-result h3 {
+    font-size: 1rem;
+  }
+}
